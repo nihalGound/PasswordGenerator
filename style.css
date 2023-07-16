@@ -1,0 +1,168 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish:wght@300&family=Open+Sans&family=Poppins:wght@200;300;700&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    background: linear-gradient( 231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100% );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 32px;
+    font-weight: bolder;
+    width: 100%;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.passHeader{
+    position: relative;
+    border-radius: 4px;
+    border-bottom: 0.35rem solid #58077d;
+    padding-top: 0.35rem;
+    margin: 1rem 0;
+    background: #160628;
+
+}
+#displayPassword{
+    background: #160628;
+    padding: 1.15rem 1rem;
+    color: #ffe53d;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 3.25rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 100%;
+}
+::placeholder{
+    color: #ffe53d;
+}
+#copy_text{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.3rem;
+    color: #ffe53d;
+    font-weight: 600;
+    font-size: 1.3rem;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.active{
+    visibility: visible;
+}
+.copy_btn{
+    position: absolute;
+    right: 6%;
+    top: 35%;
+    cursor: pointer;
+}
+.fa-copy{
+    font-size: 25px;
+}
+.input-container{
+    background: #160628;
+    border-radius: 5px;
+    padding: 25px;
+}
+.input-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.pswdLength{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.length_count{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffe53d;
+}
+#Slider{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #bc15f4;
+    margin: 10px 0;
+}
+#Slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffe53d;
+    box-shadow: 0px 0px 20px #ffe53d;
+}
+input[type=checkbox] ~label{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+}
+input[type=checkbox]{
+    position: relative;
+    appearance: none;
+    margin-right: 15px;
+    border: 1px solid #00e0d1; 
+    width: 20px;
+    height: 20px;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    outline: none;
+}
+input[type=checkbox]:checked{
+    background-color: #00e0d1;
+}
+input[type=checkbox]:checked::before{
+    content: "✔";
+    position: absolute;
+    color: #160628;
+    font-size: 1.05rem; 
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.2rem;
+}
+#Slider ~ div{
+    margin: 8px 0;
+}
+.strength-indicator{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#indicator{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+#GenerateButton{
+    padding: 16px 0;
+    color: #ffe53d;
+    font-size: 20px;
+    font-weight: bold;
+    background: #bc15f4;
+    border-bottom: 4px solid #ffe53d;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+}
